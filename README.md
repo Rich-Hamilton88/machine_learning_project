@@ -27,8 +27,8 @@ Utilized the UFCstats data only at first to find out if a Linear Regression mode
 
 ## Step 6 -Final Analysis
 
-Accuracy Score - 73.5%
-Model Score - 68.4 %
+* Accuracy Score - **73.5%**
+* Model Score - **68.4 %**
 
 Based on the datasets it appears more likely that the red corner is the favorite over the blue corner. The model is having a hard time confirming the reasoning behind this finding. My assumption is due to the nature of the sport and the variety a ways a fighter can win could very well be contributing to this.
 
