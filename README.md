@@ -5,7 +5,7 @@ The objective of this project is to utilize machine learning concepts to try to 
 
 ## Step 1 - Obtain the data
 
-I first thought about using a UFC dataset on kaggle.com. After further analysis I wanted to obtain the most recent information as possible. I gathered my data from [UFC Stats](http://ufcstats.com/statistics/events/completed) website.
+I first thought about using a UFC dataset on kaggle.com only. After further analysis I wanted to obtain the most recent information as possible and utlize kaggle dataset. I gathered my data from [UFC Stats](http://ufcstats.com/statistics/events/completed) website.
 
 ## Step 2 - Scrape the website
 During our class in week 12 we learned about Web-Scraping. In the span of a week I researched and learned another technique to scrape websites called "Scrapy". This powerful python addon tool is awesome! Try it out to see what your thoughts are.
@@ -18,11 +18,19 @@ By learning the basics of the tool I essentially used Git Bash to write the code
 
 ## Step 3 - Cleaned CSV files in Jupyter
 
+Extracted the data from UFC Stats (Step 2 provides additional details) and Kaggle, combined the datasets, cleaned the data by dropping converting "NAN" values, converting columns to fractions from precentages. Stored final datasets in Postgres to evaluate potential Visualization needs.
 
-## Step 4 -
-
+## Step 4 - Machine Learning in Jupyter
+Utilized the UFCstats data only at first to find out if a Linear Regression model could be used. Very quickly it was determined that the dataset was very non-linear. I was unable to complete a linear regression model. I figured that other models such as KNN, SVM may vary well provide a good analysis also. My own personal level of comfort and understanding of other models outside of linear regression lead me to choose Random Forest. Selected the data, Trained the model, tested the model, Fitted the model, and made a prediciton.
 
 ## Step 5- Visualizations
+
+## Step 6 -Final Analysis
+
+Accuracy Score - 73.5%
+Model Score - 68.4 %
+
+Based on the datasets it appears more likely that the red corner is the favorite over the blue corner. The model is having a hard time confirming the reasoning behind this finding. My assumption is due to the nature of the sport and the variety a ways a fighter can win could very well be contributing to this.
 
 ## Content
 
@@ -76,4 +84,6 @@ Each row is a compilation of both fighter stats. Fighters are represented by 're
 * win_by_Submission is the number of wins by submission in the fighter's ufc career
 * win_by_TKO_Doctor_Stoppage is the number of wins by doctor stoppage in the fighter's ufc career
 
+## Acknowledgement
 
+Inspiration for this project was due to my enjoyment as a long time fan of the sport. Data Scientists Yuan Tian & Charles Pierse both worked on more advanced models but provided the blueprint to attempt my own verison of predictions.
