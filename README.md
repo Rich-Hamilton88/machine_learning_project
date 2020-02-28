@@ -24,6 +24,7 @@ Extracted the data from UFC Stats (Step 2 provides additional details) and Kaggl
 Utilized the UFCstats data only at first to find out if a Linear Regression model could be used. Very quickly it was determined that the dataset was very non-linear. I was unable to complete a linear regression model. I figured that other models such as KNN, SVM may vary well provide a good analysis also. My own personal level of comfort and understanding of other models outside of linear regression lead me to choose Random Forest. Selected the data, Trained the model, tested the model, Fitted the model, and made a prediciton.
 
 ## Step 5- Visualizations
+Tableau used to Visualize UFC explosion in popularity throughout the years, Fighers with the most wins, type of wins (Most KO, Sub, etc.. in UFC History), Most attended Events.
 
 ## Step 6 -Final Analysis
 
