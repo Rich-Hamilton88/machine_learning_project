@@ -11,13 +11,25 @@
 </head>
 
 <body>
+     <!--Nav bar-->
+<div class="navigation">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" style="background-color: white;" href="index.html">Events</a>
+    <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <li class="nav-item">
+      <a class="nav-link" href="index2.html">Fighters</a>
+      </li>
+  </nav>
+</div>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="static/images/ufc.jpg" class="img-fluid" alt="Responsive image">
+        <img src="static/images/UFC 248.jpg" class="img-fluid" alt="Responsive image">
         <div id="main-title" class="text-center">
           <h1>UFC Events</h1>
-          <h4>All events since 1993</h4>
+          <h4>1993-present</h4>
         </div>
       </div>
       <div class="col-md-6">
@@ -28,24 +40,24 @@
                 <div class="form-group">
                   <ul class="list-group" id="filters">
                     <li class="filter list-group-item">
-                        <label for="event">Enter Event Name</label>
-                        <input class="form-control" id="eventname" type="text" placeholder="UFC 1">
+                        <label for="event_name">Enter Event Name</label>
+                        <input class="form-control" id="event_name" type="text" placeholder="UFC 1">
                     </li>
                     <li class="filter list-group-item">
-                      <label for="date">Enter a Date</label>
-                      <input class="form-control" id="datetime" type="text" placeholder="m/d/yyyy">
+                      <label for="event_date">Enter a Date</label>
+                      <input class="form-control" id="event_date" type="text" placeholder="m/d/yyyy">
                     </li>
 	                <li class="filter list-group-item">
-                      <label for="attendance">Enter Attendance #</label>
-                      <input class="form-control" id="eventattendance" type="text" placeholder="(i.e. 20000)">
+                      <label for="event_attendance">Enter Attendance #</label>
+                      <input class="form-control" id="event_attendance" type="text" placeholder="(i.e. 20000)">
                     </li>
 	                <li class="filter list-group-item">
-                      <label for="weight">Enter Weight Class</label>
-                      <input class="form-control" id="weightclass" type="text" placeholder="(i.e. Heavyweight)">
+                      <label for="weight_class">Enter Weight Class</label>
+                      <input class="form-control" id="weight_class" type="text" placeholder="(i.e. Heavyweight)">
                     </li>
 	                <li class="filter list-group-item">
-                      <label for="winning">Enter Method of Win</label>
-                      <input class="form-control" id="method" type="text" placeholder="(i.e. KO/TKO)">
+                      <label for="win_method_type">Enter Method of Win</label>
+                      <input class="form-control" id="win_method_type" type="text" placeholder="(i.e. KO/TKO)">
                     </li>
 	                <li class="filter list-group-item">
                       <label for="winner">Winner</label>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFC Fighters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/spacelab/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!--Nav bar-->
+<div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: white;" href="index.html">Events</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <li class="nav-item">
+        <a class="nav-link" href="index2.html">Fighters</a>
+        </li>
+    </nav>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="static/images/ufc.jpg" class="img-fluid" alt="Responsive image">
+        <div id="main-title" class="text-center">
+          <h1>UFC Fighter Data</h1>
+          <h4>Career Stats</h4>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <ul class="list-group" id="filters">
+                    <li class="filter list-group-item">
+                        <label for="fighter_name">Enter Name</label>
+                        <input class="form-control" id="fighter_name" type="text" placeholder="Nate Diaz">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="fighter_record">Enter Fighter Record</label>
+                      <input class="form-control" id="fighter_record" type="text" placeholder="(i.e. Record: 10-3-0)">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="weight">Enter Weight </label>
+                      <input class="form-control" id="weight" type="text" placeholder="(i.e. 170)">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="stance">Enter Stance</label>
+                      <input class="form-control" id="stance" type="text" placeholder="(i.e. Orthodox)">
+                    </li>				
+                  </ul>
+                </div>
+                <button id="filter-btn" type="submit" class="btn btn-info">Filter Table</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-auto">
+        <div id="table-area" class="">
+          <table id="ufc-table_2" class="table table-striped table-responsive">
+            <thead class="thead-dark">
+              <tr>
+                <th class="table-head">Fighter Name</th>
+                <th class="table-head">Fighter Record</th>
+                <th class="table-head">Height</th>
+                <th class="table-head">Weight</th>
+                <th class="table-head">Reach</th>
+                <th class="table-head">Stance</th>
+                <th class="table-head">DOB</th>
+                <th class="table-head">Strikes Landed Per Minute</th>
+                <th class="table-head">Strike Accuracy</th>
+                <th class="table-head">Strike Absorbed per Minute</th>
+                <th class="table-head">Strike Defense</th>
+                <th class="table-head">Takedown Average</th>
+                <th class="table-head">Takedown Accuracy</th>
+                <th class="table-head">Takedown Defense</th>
+                <th class="table-head">Submission Average</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="no-data" class=""></div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data2.js"></script>
+  <script src="static/js/app2.js"></script>
+</body>
+
+</html>
