@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFC Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/spacelab/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="static/images/ufc.jpg" class="img-fluid" alt="Responsive image">
+        <div id="main-title" class="text-center">
+          <h1>UFC Events</h1>
+          <h4>All events since 1993</h4>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <ul class="list-group" id="filters">
+                    <li class="filter list-group-item">
+                        <label for="event">Enter Event Name</label>
+                        <input class="form-control" id="eventname" type="text" placeholder="UFC 1">
+                    </li>
+                    <li class="filter list-group-item">
+                      <label for="date">Enter a Date</label>
+                      <input class="form-control" id="datetime" type="text" placeholder="m/d/yyyy">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="attendance">Enter Attendance #</label>
+                      <input class="form-control" id="eventattendance" type="text" placeholder="(i.e. 20000)">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="weight">Enter Weight Class</label>
+                      <input class="form-control" id="weightclass" type="text" placeholder="(i.e. Heavyweight)">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="winning">Enter Method of Win</label>
+                      <input class="form-control" id="method" type="text" placeholder="(i.e. KO/TKO)">
+                    </li>
+	                <li class="filter list-group-item">
+                      <label for="winner">Winner</label>
+                      <input class="form-control" id="winner" type="text" placeholder="(i.e. Conor McGregor)">
+                    </li>					
+                  </ul>
+                </div>
+                <button id="filter-btn" type="submit" class="btn btn-info">Filter Table</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-auto">
+        <div id="table-area" class="">
+          <table id="ufc-table" class="table table-striped table-responsive">
+            <thead class="thead-dark">
+              <tr>
+                <th class="table-head">Event Name</th>
+                <th class="table-head">Event Date</th>
+                <th class="table-head">Event Attendance</th>
+                <th class="table-head">Fighter 1</th>
+                <th class="table-head">Fighter 2</th>
+                <th class="table-head">Significant Strikes Fighter 1</th>
+                <th class="table-head">Significant Strikes Fighter 2</th>
+                <th class="table-head">Takedowns Fighter 1</th>
+                <th class="table-head">Takedowns Fighter 2</th>
+                <th class="table-head">Submission Attempts Fighter 1</th>
+                <th class="table-head">Submission Attempts Fighter 2</th>
+                <th class="table-head">Pass per Min Fighter 1</th>
+                <th class="table-head">Pass per Min Fighter 2</th>
+                <th class="table-head">Weight Class</th>
+                <th class="table-head">Win Method Type</th>
+                <th class="table-head">Method of Win Finish</th>
+                <th class="table-head">Round</th>
+                <th class="table-head">Time</th>
+                <th class="table-head">Winner</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="no-data" class=""></div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
